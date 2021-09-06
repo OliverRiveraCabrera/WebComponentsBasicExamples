@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebComponents</title>
+
+    <script type="text/javascript" src="bootstrap-5.0.2/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="index.js"></script>
+    <!--Hay que definir el archivo js donde se encuentra el componente-->
+    <script type="text/javascript" src="componenteA.js"></script>
+    <script type="text/javascript" src="componenteB.js"></script>
+    <script type="text/javascript" src="componenteC.js"></script>
+    <script type="text/javascript" src="componenteD.js"></script>
+    <script type="text/javascript" src="componenteE.js"></script>
+    <script type="text/javascript" src="componenteF.js"></script>
+
+    <link rel="stylesheet" href="bootstrap-5.0.2/css/bootstrap.min.css"/>
+</head>
+<body>
+    <componente-titulo></componente-titulo>
+    <br>
+
+    <componente-hola nombre="Oliver" apellido="R"></componente-hola>
+    <!--No es nesesario pasar todas las propiedades definidas en el componente-->
+    <br>
+
+    <componente-btn></componente-btn>
+    <br>
+
+    <componente-opciones txtid="txtDato"></componente-opciones>
+    <input type="text" id="txtDato">
+    <br/>
+
+    <componente-contador id="counter" count="1"></componente-contador>
+    <button onclick="restart();">Restart</button>
+    <br><br>
+
+    <input type="text" id="txtNombre" onchange="cambioNombre();">
+    <componente-envdata id="componenteCambio"></componente-envdata>
+    <br><br>
+
+</body>
+</html>
